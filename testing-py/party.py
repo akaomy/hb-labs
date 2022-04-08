@@ -11,8 +11,30 @@ def is_mel(name, email):
     
     # >>> is_mel('Mel Melitpolski', 'mel@ubermelon.com')
     # True
+
     # >>> is_mel('Judith Butler', 'judith@awesome.com')
     # False
+
+    >>> is_mel('Mel', 'mel@ubermelon.com')
+    True
+    
+    >>> is_mel('Melitpolski', 'mel@ubermelon.com')
+    True
+    
+    >>> is_mel('Mel Melitpolski', '')
+    True
+    
+    >>> is_mel('', 'mel@ubermelon.com')
+    True
+
+    >>> is_mel('mel melitpolski', 'mel@ubermelon.com')
+    True
+
+    >>> is_mel('MEL MELITROPOLSKI', 'mel@ubermelon.com')
+    True
+
+    >>> is_mel('Mel Melitpolski', 'mel@ubermelon')
+    True
 
     """
 
